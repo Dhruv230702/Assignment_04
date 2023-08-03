@@ -177,7 +177,7 @@ public class InsuranceQuoteTest
         Assert.That(driver.FindElement(By.Id("phone-error")).Text, Is.EqualTo("Phone Number must follow the patterns 111-111-1111 or (111)111-1111"));
     }
     [Test]
-    public void InsuranceQuote05Age28Experience03Accidents0_InvalidEmailAddress()
+    public void InsuranceQuote05_Age28Experience03Accidents0_InvalidEmailAddress()
     {
         // Arrange
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
@@ -254,7 +254,7 @@ public class InsuranceQuoteTest
         Assert.That(driver.FindElement(By.Id("postalCode-error")).Text, Is.EqualTo("Postal Code must follow the pattern A1A 1A1"));
     }
     [Test]
-    public void InsuranceQuote07Experience05Accidents00_AgeOmitted()
+    public void InsuranceQuote07_Experience05Accidents00_AgeOmitted()
     {
         // Arrange
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
@@ -286,7 +286,7 @@ public class InsuranceQuoteTest
         Assert.That(driver.FindElement(By.Id("age-error")).Text, Is.EqualTo("Age (>=16) is required"));
     }
     [Test]
-    public void InsuranceQuote08Age37Experience08_AccidentsOmitted()
+    public void InsuranceQuote08_Age37Experience08_AccidentsOmitted()
     {
         // Arrange
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
